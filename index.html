@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/styles/bootstrap.min.css">
+    <link rel="stylesheet" href="/styles/jquery-ui.min.css">
+    <link rel="stylesheet" href="/styles/slick-theme.css">
+    <link rel="stylesheet" href="/styles/slick.css">
+    <link rel="stylesheet" href="/styles/hover.css">
+    <link rel="stylesheet" href="/styles/magnific-popup.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="styles/adaptive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+
+<header class="header d-flex justify-content-md-between justify-content-sm-around justify-content-between
+                    align-items-center px-3 py-2 bg-secondary bg-opacity-10">
+    <div class="menu-logo-block d-flex justify-content-center align-items-center">
+        <div class="logo fs-5">Logo</div>
+        <nav class="menu">
+            <div class="close d-none">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512"
+                     style="width: 25px; height: auto; cursor: pointer;">
+                    <path d="M342.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L192 210.7 86.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L146.7 256 41.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L192 301.3 297.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L237.3 256 342.6 150.6z"
+                          style="fill: white"/>
+                </svg>
+            </div>
+            <ul class="menu-items list-unstyled row row-cols-5 d-flex justify-content-between align-items-center m-0 my-2 py-1">
+                <li class="menu-item col w-auto pe-2 fs-6">
+                    <a href="#" class="menu-ref text-decoration-none text-black">Главная</a>
+                </li>
+                <li class="menu-item col w-auto px-2 fs-6">
+                    <a href="#" class="menu-ref text-decoration-none text-black text-opacity-50">Преимущества</a>
+                </li>
+                <li class="menu-item col w-auto px-2 fs-6">
+                    <a href="#" class="menu-ref text-decoration-none text-black text-opacity-50">Цены</a>
+                </li>
+                <li class="menu-item col w-auto px-2 fs-6">
+                    <a href="#" class="menu-ref text-decoration-none text-black text-opacity-50">Контакты</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div class="header_header-actions py-1 d-flex justify-content-sm-between align-items-center justify-content-end">
+        <input class="header_search-input rounded-3 h-100 me-2 my-auto border-1 border-dark border-opacity-25 ps-3 py-2"
+               type="text"
+               placeholder="Поиск чая">
+        <button class="header_search-button btn btn-outline-primary h-100 px-sm-4 px-2 w-auto me-3 me-md-0 fs-5 hvr-sweep-to-top">
+            Найти
+        </button>
+        <div class="header__burger my-auto px-3 w-auto" id="burger" style="display: none; width: 40px">
+            <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    width="40px" height="22px">
+                <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                      d="M0.000,-0.000 L39.1000,-0.000 L39.1000,2.000 L0.000,2.000 L0.000,-0.000 Z"/>
+                <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                      d="M0.000,10.000 L39.1000,10.000 L39.1000,12.000 L0.000,12.000 L0.000,10.000 Z"/>
+                <path fill-rule="evenodd" fill="rgb(0, 0, 0)"
+                      d="M0.000,19.1000 L39.1000,19.1000 L39.1000,21.1000 L0.000,21.1000 L0.000,19.1000 Z"/>
+            </svg>
+        </div>
+    </div>
+</header>
+
+<section class="slider-block mt-3 mt-md-5 pt-xxl-4 mx-auto">
+    <div class="slide mt-4 first-slide d-flex align-items-center justify-content-center">
+        <div class="container-xxl mx-5 px-0 d-flex align-items-end position-relative h-100">
+            <div class="content-slide my-0 pt-3 pb-0 ms-5 my-xl-4 py-xl-5 ps-xl-5 mt-lg-4 mb-lg-4 pb-lg-0 py-md-4 mt-md-2 mb-md-3 ps-md-4 ps-sm-0 pb-sm-3 position-relative z-1">
+                <h2 class="slide_slide-title my-md-5 ps-md-4 ps-sm-3 mt-sm-5 mb-sm-4 pb-1 fs-1 fw-bold">Скидки на наши
+                    травяные чаи</h2>
+                <p class="second-slide__p pt-3 pb-2 ps-md-4 ps-sm-3">Узнай все подробности, заполнив заявку</p>
+                <div class="actions pb-md-5 pb-sm-0 mb-xl-5 mb-lg-2 mb-0 ps-md-4 ps-sm-3">
+                    <button class="fill-order-btn btn btn-primary px-md-5 px-sm-3 my-5 hvr-sweep-to-top">Заполнить
+                    </button>
+                </div>
+            </div>
+            <img src="images/banner1.png" alt="" class="position-absolute z-0 w-100 h-100">
+        </div>
+    </div>
+    <div class="slide mt-4 second-slide d-flex align-items-center justify-content-center h-100">
+        <div class="container-xxl mx-5 mt-xxl-0 d-flex justify-content-center align-items-center my-4 my-sm-0 mt-5 mt-sm-0 h-100">
+            <div class="content-slide col position-relative my-sm-5 py-md-5 ms-lg-5 ps-md-5 z-1">
+                <h2 class="slide_slide-title ps-sm-5 ps-3 mb-sm-5 mb-4 ms-4 pb-1 fs-1 fw-bold d-inline-block">Закажи три
+                    пачки чая и получи
+                    подарок</h2>
+                <div class="actions ps-sm-5 ps-3 my-md-5">
+                    <button class="fill-order-btn btn btn-primary ms-4 px-md-5 px-sm-3 px-2 mt-3 d-block hvr-sweep-to-top">
+                        Заполнить
+                    </button>
+                </div>
+            </div>
+            <div class="slide-image col mt-lg-5 mt-0 me-md-5 pe-md-5 me-sm-3 pe-sm-3 d-flex justify-content-sm-end justify-content-lg-center justify-content-center">
+                <img src="images/banner2.png" alt="Banner-image">
+            </div>
+        </div>
+    </div>
+    <div class="slide mt-4 third-slide d-flex align-items-center justify-content-center h-100">
+        <div class="container-xxl mx-5 px-0 d-flex align-items-end position-relative h-100">
+            <div class="content-slide my-0 mb-xl-0 mt-xl-5 pt-xl-5 my-lg-4 pt-lg-0 ms-lg-5 my-md-1 p-md-5 p-sm-1 m-sm-4 pt-sm-4 h-100 w-50 col-6 col-xl-6 col-lg-8 position-relative z-1">
+                <h2 class="slide_slide-title m-5 me-0 ms-3 ps-4 mt-sm-1 mt-md-5 pt-sm-4 pt-md-5 pt-md-0 pb-md-3 mx-sm-5 pb-1 fs-1 fw-bold">
+                    Попробуй нашу новинку — ягодный чай</h2>
+                <div class="actions ms-3 m-xl-5 my-lg-3 ms-sm-5 ps-4 pb-5">
+                    <button class="fill-order-btn btn btn-primary px-md-5 px-sm-3 mt-3 d-block hvr-sweep-to-top">
+                        Заполнить
+                    </button>
+                </div>
+            </div>
+            <img src="images/banner3.png" alt="" class="position-absolute z-0 top-0 start-0 w-100 h-100">
+        </div>
+    </div>
+</section>
+
+<section class="products-description container mx-auto mx-md-auto mt-xl-5 mt-lg-3 pt-lg-4 pt-md-0  pt-sm-5 pt-4 d-flex
+                    justify-content-center align-items-center flex-column flex-wrap w-100">
+    <h2 class="products-description__h2 fw-bold fs-2 wow animate__fadeInDown">Наши чайные коллекции</h2>
+    <div class="product-cards my-4 w-100 row row-cols-lg-3 row-cols-md-2 row-cols-1 g-4">
+        <div class="col">
+            <div class="product-card card text-start wow animate__fadeInDown">
+                <a class="img-ref" href="images/card-image1.png">
+                    <img src="images/card-image1.png" alt="Tea" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h3 class="product-title fw-bold fs-5 mb-2 mt-1">Детокс чай лайм</h3>
+                    <p class="product-description pt-1 mb-4">Великолепный чай внесет в вашу жизнь яркие краски и вкус
+                        расслабления</p>
+                    <button class="button-about btn btn-primary px-4 hvr-sweep-to-right"><span class="px-0 px-md-3">Подробнее</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-card col card text-start wow animate__fadeInDown">
+                <a class="img-ref" href="images/card-image2.png">
+                    <img src="images/card-image2.png" alt="Tea" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h3 class="product-title fw-bold fs-5 mb-2 mt-1">Детокс чай лайм</h3>
+                    <p class="product-description pt-1 mb-4">Великолепный чай внесет в вашу жизнь яркие краски и вкус
+                        расслабления</p>
+                    <button class="button-about btn btn-primary px-4 hvr-sweep-to-right"><span class="px-0 px-md-3">Подробнее</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-card col card text-start wow animate__fadeInDown">
+                <a class="img-ref" href="images/card-image3.png">
+                    <img src="images/card-image3.png" alt="Tea" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h3 class="product-title fw-bold fs-5 mb-2 mt-1">Детокс чай лайм</h3>
+                    <p class="product-description pt-1 mb-4">Великолепный чай внесет в вашу жизнь яркие краски и вкус
+                        расслабления</p>
+                    <button class="button-about btn btn-primary px-4 hvr-sweep-to-right"><span class="px-0 px-md-3">Подробнее</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-card col card text-start wow animate__fadeInDown">
+                <a class="img-ref" href="images/card-image4.png">
+                    <img src="images/card-image4.png" alt="Tea" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h3 class="product-title fw-bold fs-5 mb-2 mt-1">Детокс чай лайм</h3>
+                    <p class="product-description pt-1 mb-4">Великолепный чай внесет в вашу жизнь яркие краски и вкус
+                        расслабления</p>
+                    <button class="button-about btn btn-primary px-4 hvr-sweep-to-right"><span class="px-0 px-md-3">Подробнее</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-card col card text-start wow animate__fadeInDown">
+                <a class="img-ref" href="images/card-image5.png">
+                    <img src="images/card-image5.png" alt="Tea" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h3 class="product-title fw-bold fs-5 mb-2 mt-1">Детокс чай лайм</h3>
+                    <p class="product-description pt-1 mb-4">Великолепный чай внесет в вашу жизнь яркие краски и вкус
+                        расслабления</p>
+                    <button class="button-about btn btn-primary px-4 hvr-sweep-to-right"><span class="px-0 px-md-3">Подробнее</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="product-card col card text-start wow animate__fadeInDown">
+                <a class="img-ref" href="images/card-image6.png">
+                    <img src="images/card-image6.png" alt="Tea" class="card-img-top">
+                </a>
+                <div class="card-body">
+                    <h3 class="product-title fw-bold fs-5 mb-2 mt-1">Детокс чай лайм</h3>
+                    <p class="product-description pt-1 mb-4">Великолепный чай внесет в вашу жизнь яркие краски и вкус
+                        расслабления</p>
+                    <button class="button-about btn btn-primary px-4 hvr-sweep-to-right"><span class="px-0 px-md-3">Подробнее</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section
+        class="main-about container px-xxl-5 mt-5 d-flex justify-content-center align-items-center flex-column flex-wrap">
+    <h2 class="products-description__h2 fw-bold fs-2 mb-0 wow animate__fadeInDown">Ответы на часто задаваемые
+        вопросы</h2>
+    <div class="question-response-block accordion px-4 w-100 my-5 mx-xxl-5 px-xxl-5" id="accordionExample">
+        <div class="accordion-item border-0 mb-3 mx-xl-5 px-xl-4 wow animate__fadeInDown">
+            <h2 class="accordion-header px-md-5 mx-md-3" id="headingOne">
+                <button class="accordion-button bg-primary text-white bg-opacity-75" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-controls="collapseOne">
+                    Собираете ли вы подарочные боксы?
+                </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse show px-md-5 mx-md-3" aria-labelledby="headingOne"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body pb-0">
+                    Да, у нас есть такая услуга. Мы можем собрать подарочный бокс на любой вкус, объем и стоимость!
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item border-0 mb-3 mx-xl-5 px-xl-4 wow animate__fadeInDown">
+            <h2 class="accordion-header px-md-5 mx-md-3" id="headingTwo">
+                <button class="accordion-button collapsed bg-primary text-white bg-opacity-75" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Сколько у вас разновидностей чая?
+                </button>
+            </h2>
+            <div id="collapseTwo" class="accordion-collapse collapse px-md-5 mx-md-3" aria-labelledby="headingTwo"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body pb-0">
+                    Всего у нас в продаже 54 вида чая, и каждый из них имеет свои особенности в процессе производства,
+                    вкусе и цвете.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item border-0 mb-3 mx-xl-5 px-xl-4 wow animate__fadeInDown">
+            <h2 class="accordion-header px-md-5 mx-md-3" id="headingThree">
+                <button class="accordion-button collapsed bg-primary text-white bg-opacity-75" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                        aria-controls="collapseThree">
+                    В какой срок осуществляется доставка?
+                </button>
+            </h2>
+            <div id="collapseThree" class="accordion-collapse collapse px-md-5 mx-md-3" aria-labelledby="headingThree"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body pb-0">
+                    Сроки доставки: доставка в течении двух рабочих дней с момента приема заказа на расстояние не более
+                    25 км от МКАД.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item border-0 mb-3 mx-xl-5 px-xl-4 wow animate__fadeInDown">
+            <h2 class="accordion-header px-md-5 mx-md-3" id="headingFour">
+                <button class="accordion-button collapsed bg-primary text-white bg-opacity-75" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                        aria-controls="collapseFour">
+                    У вас обновляется ассортимент?
+                </button>
+            </h2>
+            <div id="collapseFour" class="accordion-collapse collapse px-md-5 mx-md-3" aria-labelledby="headingFour"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body pb-0">
+                    Мы еженедельно обновляем ассортимент наших товаров, добавляем актуальные и востребованные модели.
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item border-0 mb-3 mx-xl-5 px-xl-4 wow animate__fadeInDown">
+            <h2 class="accordion-header px-md-5 mx-md-3" id="headingFive">
+                <button class="accordion-button collapsed bg-primary text-white bg-opacity-75" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                        aria-controls="collapseFive">
+                    Какого объема у вас пачки чая?
+                </button>
+            </h2>
+            <div id="collapseFive" class="accordion-collapse collapse px-md-5 mx-md-3" aria-labelledby="headingFive"
+                 data-bs-parent="#accordionExample">
+                <div class="accordion-body pb-0">
+                    Мы продаем пачки чая по 25, 50 и 100 грамм.
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section
+        class="order-form container-lg px-xxl-5 px-0 d-flex justify-content-center align-items-center flex-column wow animate__fadeInDown">
+    <h2 class="order-form__h2 fw-bold fs-2 mb-5 pb-2 wow animate__fadeInDown">Сделать заказ</h2>
+    <form class="order-info-form d-flex justify-content-center mt-1 w-75 row">
+        <div class="row-inputs row row-cols-3 w-75 px-md-4 px-sm-0 px-4 pb-3">
+            <div class="col px-1 name d-flex flex-column">
+                Имя
+                <input type="text" class="form__input input-name border-dark border-opacity-10 rounded-2"
+                       data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Введите свое имя">
+            </div>
+            <div class="col name d-flex flex-column">
+                Фамилия
+                <input type="text" class="form__input input-surname border-dark border-opacity-10 rounded-2"
+                       data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Введите свою фамилию">
+            </div>
+            <div class="col name d-flex flex-column">
+                Телефон
+                <input type="text" class="form__input input-phone border-dark border-opacity-10 rounded-2"
+                       data-bs-toggle="tooltip" data-bs-placement="right"
+                       data-bs-title="Введите свой телефон в формате: +7(000)000-00-00">
+            </div>
+        </div>
+        <div class="row-inputs row row-cols-2 w-75 px-md-4 px-sm-0 px-4 pb-3">
+            <div class="col px-1 name d-flex flex-column">
+                Страна
+                <input type="text" class="form__input input-country border-dark border-opacity-10 rounded-2"
+                       data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Введите страну проживания">
+            </div>
+            <div class="col name d-flex flex-column">
+                Индекс
+                <input type="text" class="form__input input-post-index border-dark border-opacity-10 rounded-2"
+                       data-bs-toggle="tooltip" data-bs-placement="right"
+                       data-bs-title="Введите почтовый индекс в формате: 000000">
+            </div>
+        </div>
+        <div class="row-inputs row w-75 px-md-4 px-sm-0 px-4 pb-3">
+            <div class="col px-1 name d-flex flex-column">
+                Адрес
+                <input type="text" class="form__input input-address border-dark border-opacity-10 rounded-2"
+                       data-bs-toggle="tooltip" data-bs-placement="right"
+                       data-bs-title="Введите адрес  вашего проживания">
+            </div>
+        </div>
+        <div class="row-button row w-75 pt-2 px-md-4 px-sm-0 px-4">
+            <button class="order-button btn btn-primary w-auto px-4 ms-1 hvr-sweep-to-right" type="button"><span
+                    class="px-3">Отправить</span></button>
+        </div>
+    </form>
+</section>
+<footer class="footer mt-5 py-3 bg-secondary bg-opacity-10">
+    <p class="copyrights-text text-black text-opacity-50 ps-3 m-0">Все права защищены</p>
+</footer>
+
+<script src="scripts/popper.min.js"></script>
+<script src="scripts/imask.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/jquery-3.7.1.min.js"></script>
+<script src="scripts/jquery-ui.min.js"></script>
+<script src="scripts/jquery.magnific-popup.js"></script>
+<script src="scripts/wow.min.js"></script>
+<script src="scripts/slick.min.js"></script>
+<script src="scripts/script.js"></script>
+</body>
+</html>
